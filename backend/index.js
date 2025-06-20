@@ -7,10 +7,8 @@ const mongoDB = require("./db")
 
 mongoDB()
 app.use(cors({
-  origin: process.env.CORS_ORIGIN,
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept', 'Authorization']
-}))
+  origin: '*'
+}));
 
 // CORS middleware - improved
 app.use((req, res, next) => {
