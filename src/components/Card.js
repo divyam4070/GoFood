@@ -1,13 +1,13 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useDispatchCart, useCart } from "./ContextReducer";
-import { useNavigate } from "react-router-dom";
+
 
 export default function Card(props) {
   let dispatch = useDispatchCart();
   let options = props.options;
   let foodItem = props.foodItem;
   let data = useCart();
-  let navigate = useNavigate();
+
   let priceOptions = Object.keys(options);
 
   const [qty, setQty] = useState(1);
