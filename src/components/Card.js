@@ -17,17 +17,7 @@ export default function Card(props) {
   useEffect(() => {
     setSize(Object.keys(options)[0]);
   }, [options]);
-  const handleClick = () => {
-    if (!localStorage.getItem("token")) {
-      navigate("/login");
-    }
-  };
-  const handleQty = (e) => {
-    setQty(e.target.value);
-  };
-  const handleOptions = (e) => {
-    setSize(e.target.value);
-  };
+  
   const handleAddToCart = async () => {
   let existingItem = null;
 
