@@ -12,7 +12,7 @@ app.use(cors({
 
 // CORS middleware - improved
 app.use((req, res, next) => {
-    res.setHeader("Access-Control-Allow-Origin", "https://go-food-git-main-divyam4070s-projects.vercel.app")
+    res.setHeader("Access-Control-Allow-Origin", "https://divyam.fun")
     res.header(
         "Access-Control-Allow-Headers",
         "Origin, X-Requested-With, Content-Type, Accept, Authorization"
